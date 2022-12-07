@@ -1,0 +1,274 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+body{
+    background: #d7ccc8;
+    background-image: url('420895_NEW.png');
+    background-size: cover;
+}
+.form-container{
+    justify-content: right;
+    align-self: right;
+    height: 600px;
+    width: 600px;
+    padding-left: 600px;
+    padding-top: 150px;
+    margin: 50px auto;
+
+}
+.form-container form{
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+    background-image: conic-gradient(from -45deg, rgba(238, 241, 58, 0.856), rgb(28, 5, 83));
+    padding: 30px;
+    text-transform: capitalize;
+    border-radius: 30px;
+}
+.form-container form h3{
+
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgb(28, 5, 83);
+}
+.form-container form label{
+    font-size: 1.3rem;
+    padding: 3px 0;
+    color: rgb(238, 241, 58, 0.856);
+}
+.form-container form input, textarea{
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 0 5px 0;
+    border: none;
+    box-shadow: 3px 3px 3px 0 rgba(0, 0, 0, 0.3);
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.Button{
+
+    justify-content: center;
+    align-self: center;
+    height: 40px;
+    width: 90px;
+    font-size: 100%;
+    cursor: pointer;
+    border-radius: 20px;
+    border-color: rgb(238, 241, 58, 0.856);
+}
+
+
+.rating-css div{
+    font-size: 1.3rem;
+    padding: 10px 0;
+    color: rgb(238, 241, 58, 0.856);
+}
+
+.rating-css input{
+    display: none;
+}
+
+.rating-css input + label {
+    font-size: 60px;
+    text-shadow: 1px 1px 0 rgb(238, 241, 58, 0.856);
+    cursor: pointer;
+}
+
+.rating-css input:checked + label ~ label {
+    color: #838383;
+}
+
+.rating-css label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+.rating-css #star-icon {
+   padding-top: 500px;
+}
+
+
+.inner_header{
+    
+    width: 100%;
+    height: 100%;
+    display:black;
+   
+   
+}
+.header{
+    justify-content: top;
+    align-items: top;
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+	height: 112px;
+    display: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+
+}
+
+.logo{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    height: 100%;
+    display: table;
+    float: left;
+    margin-bottom: 50px;
+}
+
+.logo h1{
+    color: white;
+    display: table-cell;
+    height: 100%;
+    vertical-align: middle;
+    font-size: 32;
+}
+
+.Text_Logo{
+
+    width: 400px;
+    display: table-cell;
+    vertical-align: middle;
+    left: 0;
+
+}
+.MoonText{
+
+    width: 355px;
+    display: table-cell;
+    vertical-align: middle;
+    left: 0;
+
+}
+
+.Moon{
+    position: fixed;
+    width: 150px;
+    height:130px;
+    
+    top:6%;
+    left:50%;
+    transform: translate(6%,-50%); 
+    animation: myfirst 15s infinite linear;
+}
+
+
+@keyframes myfirst {
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    vertical-align: middle;
+    padding-top: 15px;
+
+}
+
+.navigation a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0px 20px;
+    
+
+}
+
+.navigation a li
+{
+    display: table-cell;
+    vertical-align: middle;
+    height:100%;
+    color: white;
+    font-size:20px;
+}
+
+.btn
+{
+    position: relative;
+    background:black;
+    color: #fff;
+    width: 110%;
+   margin-bottom: 2rem;
+    padding: 1rem 0;
+    border:none;
+    outline:none;
+	font-size: 1em;
+	font-weight: bold;
+    cursor: pointer;
+	
+}
+
+.btn::after
+{
+    content:'';
+    position: absolute;
+    width:100%;
+    height:0.175rem;
+    left:0;
+    bottom:0;
+    background-color: red;
+}
+
+.btn-home::after
+{
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+    
+}
+
+.btn-home:hover::after
+{
+    transform: scale(1,1);
+}
+
+.btn-about::after
+{
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+    
+}
+
+.btn-about:hover::after
+{
+    transform: scale(1,1);
+}
+
+
+.btn-contact::after
+{
+    transform: scale(0,1);
+    transition: transform 0.3s ease;
+    
+}
+
+.btn-contact:hover::after
+{
+    transform: scale(1,1);
+}
