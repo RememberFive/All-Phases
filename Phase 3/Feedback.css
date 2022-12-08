@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    
 }
 
 
@@ -14,20 +13,22 @@ body{
 .form-container{
     justify-content: right;
     align-self: right;
-    height: 600px;
-    width: 600px;
-    padding-left: 600px;
-    padding-top: 150px;
-    margin: 50px auto;
+    height: 700px;
+    width: 700px;
+    padding-left: 900px;
+    padding-top: 30px;
+    margin: 200px;
 
 }
 .form-container form{
-    height: 400px;
-    width: 500px;
+    height: 500px;
+    width: 600px;
     margin: auto;
     display: flex;
     flex-direction:column;
-    background-image: conic-gradient(from -45deg, rgba(238, 241, 58, 0.856), rgb(28, 5, 83));
+    
+    background-image: conic-gradient(from 3.1416rad at 10% 50%, #f0f340d5, #636bb1);
+    /*background-image:repeating-linear-gradient(rgba(238, 241, 58, 0.856), rgb(28, 5, 83));*/
     padding: 30px;
     text-transform: capitalize;
     border-radius: 30px;
@@ -35,13 +36,21 @@ body{
 .form-container form h3{
 
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: rgb(28, 5, 83);
+}
+.form-container form h4{
+    font: 27.2px "times new roman";
+    padding-top: 20px;
+    padding-bottom: 80px;
+    text-align: center;
+    font-size: 1.7rem;
     color: rgb(28, 5, 83);
 }
 .form-container form label{
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     padding: 3px 0;
-    color: rgb(238, 241, 58, 0.856);
+    color: rgb(28, 5, 83);
 }
 .form-container form input, textarea{
     padding: 8px;
@@ -55,55 +64,100 @@ body{
 }
 
 .Button{
-
+    margin-top: 15px;
     justify-content: center;
     align-self: center;
-    height: 40px;
-    width: 90px;
-    font-size: 100%;
+    height: 60px;
+    width: 110px;
+    font-size: 130%;
     cursor: pointer;
     border-radius: 20px;
     border-color: rgb(238, 241, 58, 0.856);
 }
 
 
-.rating-css div{
-    font-size: 1.3rem;
-    padding: 10px 0;
-    color: rgb(238, 241, 58, 0.856);
-}
-
-.rating-css input{
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+.center{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    size: 500px;
+  }
+  .center .stars{
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    padding-left: 700px;
+    padding-top: 350px;
+    margin-left: 200px;
+  }
+  .stars input{
     display: none;
-}
-
-.rating-css input + label {
-    font-size: 60px;
-    text-shadow: 1px 1px 0 rgb(238, 241, 58, 0.856);
-    cursor: pointer;
-}
-
-.rating-css input:checked + label ~ label {
-    color: #838383;
-}
-
-.rating-css label:active {
-    transform: scale(0.8);
-    transition: 0.3s ease;
-}
-
-.rating-css #star-icon {
-   padding-top: 500px;
-}
-
-
-.inner_header{
+  }
+  .stars label{
+    float: right;
+    font-size: 100px;
+    color: lightgrey;
+    margin: 0 5px;
+    text-shadow: 1px 1px #bbb;
+  }
+  .stars label:before{
+    content: '★';
     
+  }
+ 
+  .stars input:checked ~ label{
+    color: gold;
+    text-shadow: 1px 1px #c60;
+  }
+  .stars:not(:checked) > label:hover,
+  .stars:not(:checked) > label:hover ~ label{
+    color: gold;
+  }
+  .stars input:checked > label:hover,
+  .stars input:checked > label:hover ~ label{
+    color: gold;
+    text-shadow: 1px 1px goldenrod;
+  }
+  .stars .result:before{
+    position: absolute;
+    padding-left: 630px;
+    margin-left: 100px;
+    content: "";
+    width: 100%;
+    left: 50%;
+    transform: translateX(-47%);
+    bottom: -30px;
+    font-size: 25px;
+    font-weight: 500;
+    color: gold;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+  }
+  .stars input:checked ~ .result:before{
+    display: block;
+  }
+  .stars #five:checked ~ .result:before{
+    content: "I love it ";
+  }
+  .stars #four:checked ~ .result:before{
+    content: "I like it ";
+  }
+  .stars #three:checked ~ .result:before{
+    content: "It's good ";
+  }
+  .stars #two:checked ~ .result:before{
+    content: "I don't like it ";
+  }
+  .stars #one:checked ~ .result:before{
+    content: "I hate it ";
+  }
+
+.inner_header {
     width: 100%;
     height: 100%;
     display:black;
-   
-   
 }
 .header{
     justify-content: top;
@@ -114,8 +168,8 @@ body{
     text-decoration: none;
     width: 100%;
 	height: 112px;
-    display: rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
+    display: black;
+    background-color: black;
     position: fixed;
     top:0;
     left:0;
@@ -212,7 +266,7 @@ body{
 .btn
 {
     position: relative;
-    background:black;
+    background: black;
     color: #fff;
     width: 110%;
    margin-bottom: 2rem;
