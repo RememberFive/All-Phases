@@ -12,6 +12,13 @@ body {
    
    
 }
+*{
+    margin: 0;
+	padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
 .header{
     justify-content: top;
     align-items: top;
@@ -30,33 +37,16 @@ body {
 
 }
 
+
+
 .logo{
-    position: fixed;
-    top:0;
-    left:0;
-    right:0;
     height: 100%;
     display: table;
     float: left;
-    margin-bottom: 50px;
 }
 
-.logo h1{
-    color: white;
-    display: table-cell;
-    height: 100%;
-    vertical-align: middle;
-    font-size: 32;
-}
 
-.Text_Logo{
 
-    width: 400px;
-    display: table-cell;
-    vertical-align: middle;
-    left: 0;
-
-}
 .MoonText{
 
     width: 355px;
@@ -67,13 +57,12 @@ body {
 }
 
 .Moon{
-    position: fixed;
     width: 150px;
     height:130px;
-    
-    top:6%;
+    position:absolute;
+    top:50%;
     left:50%;
-    transform: translate(6%,-50%); 
+    transform: translate(50%,-50%); 
     animation: myfirst 15s infinite linear;
 }
 
@@ -94,7 +83,7 @@ body {
     align-items: center;
     justify-content: right;
     vertical-align: middle;
-    padding-top: 15px;
+    padding-top: 25px;
 
 }
 
@@ -180,9 +169,18 @@ body {
     transform: scale(1,1);
 }
 
+
+
+
+
+
+
+
+
+
+
 .sidemenu {
-  margin: 10;
-  padding: 20;
+  margin-top: 5px;
   width: 200px;
   background-color: #ffffff;
   position: fixed;
@@ -215,7 +213,224 @@ body {
 }
 
 div.content {
-  margin-left: 200px;
+  margin-left: 186px;
+  margin-top: 133px;
   padding: 1px 16px;
   height: 800px;
 }
+
+
+hr{
+    width:75%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+
+
+
+
+/*Phone mode content and side menue*********************************/
+@media (max-width:750px){
+
+    .sidemenu {
+        margin-top: 7px;
+        width: 96px;
+        background-color: #ffffff;
+        position: fixed;
+        font-family: 'Times New Roman', Times, serif;
+        height: 100%;
+        overflow: auto;
+      }
+      div.content {
+        margin-left: 104px;
+        margin-top: 96px;
+        padding: 1px 16px;
+        height: 800px;
+        font-size: 10px;
+      }
+}
+
+
+/*Moon*********************************/
+@media (max-width:750px){
+
+   
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+    }
+    
+    .header{
+        justify-content: top;
+        align-items: top;
+        margin:0;
+        padding:0;
+        list-style: none;
+        text-decoration: none;
+        width: 100%;
+        height: 70px;
+        display: rgb(0, 0, 0);
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    
+    }
+   
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+  }
+    
+    
+    .logo{
+        size: 100%;
+        display: table;
+        vertical-align: middle;
+        margin-top: 2%;
+        height:100%;
+        float: left;
+    }
+    
+    
+    
+    .MoonText{
+    
+        width: 155px;
+        display: table-cell;
+        vertical-align: middle;
+        left: 0;
+    
+    }
+    
+    .Moon{
+        width: 75px;
+        height:60px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(50%,-50%); 
+        animation: myfirst 15s infinite linear;
+    }
+    
+    
+    @keyframes myfirst {
+        0%{
+            transform: translate(-50%,-50%) rotate(0deg);
+        }
+        100%{
+            transform: translate(-50%,-50%) rotate(360deg);
+        }
+    }
+    
+    
+    .navigation{
+        
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    vertical-align: middle;
+    padding-top: 11px;
+        
+    
+    }
+    
+    .navigation a{
+        height: 0%;
+        display: table;
+        
+        padding: 0px 5px;
+        
+        
+    
+    }
+    
+    .navigation a li
+    {
+        display: table-cell;
+        vertical-align: middle;
+        height:0%;
+        color: white;
+        font-size:20px;
+        margin-right: 9rem;
+    }
+    
+    .btn
+    {
+        
+        align-items: left;
+        justify-content: left;
+        vertical-align: middle;
+        position: relative;
+        background:black;
+        color: #fff;
+        width: 110%;
+        margin-bottom: 4.3rem;
+        padding: 1rem 0;
+        border:none;
+        outline:none;
+        font-size: 0.6em;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+    
+    .btn::after
+    {
+        content:'';
+        position: absolute;
+        width:100%;
+        height:0.175rem;
+        left:0;
+        bottom:0;
+        background-color: red;
+    }
+    
+    .btn-home::after
+    {
+        transform: scale(0,1);
+        transition: transform 0.3s ease;
+        
+    }
+    
+    .btn-home:hover::after
+    {
+        transform: scale(1,1);
+    }
+    
+    .btn-about::after
+    {
+        transform: scale(0,1);
+        transition: transform 0.3s ease;
+        
+    }
+    
+    .btn-about:hover::after
+    {
+        transform: scale(1,1);
+    }
+    
+    
+    .btn-contact::after
+    {
+        transform: scale(0,1);
+        transition: transform 0.3s ease;
+        
+    }
+    
+    .btn-contact:hover::after
+    {
+        transform: scale(1,1);
+    }
+    
+
+
+
+}
+
+
