@@ -5,14 +5,55 @@
     text-decoration: none;
 }
 
+body {
+    /*margin: 0;
+	padding: 0;
+	position: fixed;
+
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+    background-image: url('26a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    width: auto;
+    height: auto;
+    right: 0px;
+    left: 0px;
+    margin-top: 250px;*/
+
+
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    background-image: url(26a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    top: 0px;
+    bottom: 0px;
+    /* margin-top: 250px;*/
+    
+}
+
 .whitebox{
-    max-height: 503px;
-    max-width:956px;
-    background-color: #fff;
-    margin-left:250px;
+    height: auto;
+    width: 1000px;
+    background-color: rgb(255, 255, 255);
+    padding-left:0px;
     justify-content: center;
     align-items: center;
     border-radius: 100px;
+    zoom: 70%;
 }
 
 .header{
@@ -176,30 +217,13 @@
 
 
 
-
-
-
-
-body {
-    margin: 70px;
-    padding:70px;
-    height:100%;
-    background-color:#ffffff;
-    background-image: url('26a.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:#000000;  
-    text-align:left;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:.9em;
-}
 #top {
     padding:0 0 0 0;
     max-height:143px;
-    max-width: 850px;
+    max-width: 900px;
     background-color:#474444;
     border-top:1px solid #ffffff;
-    margin-left: 250px;
+    margin-left: 200px;
 }
 #top h1 {
     padding-top: 35px;
@@ -216,17 +240,38 @@ body {
 p {
     font-size: 1.1em;
 }
+
 #centerColumn {
+
+    margin-left: -150;
+    margin-right: 40px;
+    padding-right: 0px;
+
+
+
    padding-left: 0px;
    justify-content: center;
    align-self: center;
-   margin-left: -187px;
+   /*margin-left: -187px;*/
+
+   width: auto;
+   height: auto;
+  /* margin-left: -470;
+   margin-right: 30px;*/
+
+   display: flex;
+   flex-direction: column;
+   align-items: stretch;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: nowrap;
+
 }
 #bottom {
-    margin-left:250px;
+    margin-left:200px;
     padding:0 0 0 0;
     max-height:185px;
-    max-width: 850px;
+    max-width: 900px;
     background-color:#474444;
     border-top:5px solid #ffffff;
 }    
@@ -244,8 +289,13 @@ p {
     margin-bottom: 0;
 }
 #Fix {
+    display: flex;
+    justify-content: center;
+
+    margin-left: 0;
+    
     padding-top: 20px;
-    padding-left: 400px;
+    padding-bottom: 20px;
     cursor: pointer;   
 }
 #Fix button {
@@ -256,14 +306,21 @@ p {
     border-color: rgba(126, 126, 121, 0.856);
     cursor: pointer;
 }
+
 h1 {
+
+
     font-style: italic;
-    padding-left: 62px;
     padding-top:25px;
     padding-bottom: 15px;
+
+
+    padding-left: 50px;
+    padding-right: 50px;
+
 }
 .checkbox {
-    padding-left: 82%;
+    padding-left: 77%;
     padding-bottom: 1%;
 }
 .checkbox input {
@@ -271,6 +328,7 @@ h1 {
     height: 40px;
     width: 80px;
     border-radius: 50px;
+    margin-bottom: 10px;
     -webkit-appearance: none;
     position: relative;
     background: #e6e6e6;
@@ -308,7 +366,7 @@ h1 {
     content: "On";
   }
   .checkbox2 {
-    padding-left: 82%;
+    padding-left: 77%;
     padding-bottom: 1%;
 }
   .checkbox2 input {
@@ -316,6 +374,7 @@ h1 {
     height: 40px;
     width: 80px;
     border-radius: 50px;
+    margin-bottom: 10px;
     -webkit-appearance: none;
     position: relative;
     background: #e6e6e6;
@@ -363,14 +422,19 @@ ul li {
 }
 ul li a {
     display: block;
-    padding: 20px 25px;
+    padding: 25px 25px;
     padding-bottom: 10px;
     padding-top: 10px;
-    padding-right: 20px;
+    padding-left: 35px;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font-size: 20px;  
+
+    font-size: 1.5em;
+    font-family: 'Jost', sans-serif;
+   /* font-weight: bold;*/
+    font-weight: lighter;
+    letter-spacing: .15em;
 }
 ul li ul.dropdown li {
     display: block;  
@@ -430,7 +494,7 @@ ul li:hover ul.dropdown {
         right:0;
     
     }
-    body {
+   /* body {
         margin: 70px;
         padding:70px;
         height:100%;
@@ -443,7 +507,7 @@ ul li:hover ul.dropdown {
         font-family:Arial, Helvetica, sans-serif;
         font-size:.9em;
     }
-    
+    */
     
     .logo{
         size: 100%;
@@ -591,4 +655,7 @@ ul li:hover ul.dropdown {
 
 }
 
+/*
+@media (max-width:1000px){
 
+} */
