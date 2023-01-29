@@ -202,3 +202,8 @@
 .likeSystem {
   padding-left: 2px;
 }
+
+.chatroom-perimiter {
+  border: 2px solid lightskyblue;
+}
+
