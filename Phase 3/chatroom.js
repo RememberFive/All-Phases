@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 // Init Materialize 
 //
 M.AutoInit();
@@ -94,21 +96,22 @@ messagingArea.addEventListener("submit", (event) => {
       // Create the thumb up and thumb down icons
       //
 
-      //const thumbUp = document.createElement("a");
-      //thumbUp.classList.add("badge", "green-text", "text-lighten-2", "material-icons", "waves-effect", "waves-light", "thumbup");
-      //thumbUp.textContent = "thumb_up";
+      const thumbUp = document.createElement("a");
+      thumbUp.classList.add("badge", "material-icons", "waves-effect", "waves-light", "thumbup");
+      thumbUp.textContent = "thumb_up";
 
-      //const thumbDown = document.createElement("a");
-      //thumbDown.classList.add("badge", "red-text", "text-lighten-2", "material-icons", "waves-effect", "waves-light", "thumbdown");
-      //thumbDown.textContent = "thumb_down";
+      const thumbDown = document.createElement("a");
+      thumbDown.classList.add("badge", "material-icons", "waves-effect", "waves-light", "thumbdown");
+      thumbDown.textContent = "thumb_down";
 
       // Append everything to the chat bubble
       //
+
       newMessageBubble.appendChild(avatarAdd)
       newMessageBubble.appendChild(newMsg);
-      //likeSystem.appendChild(thumbUp);
-      //likeSystem.appendChild(thumbDown);
-      //newMessageBubble.appendChild(likeSystem);
+      likeSystem.appendChild(thumbUp);
+      likeSystem.appendChild(thumbDown);
+      newMessageBubble.appendChild(likeSystem);
 
       // Append the message container to the chatroom container
       //
@@ -132,5 +135,13 @@ messagingArea.addEventListener("submit", (event) => {
   }
 });
 
+$('thumbup').click(() => {
+  $(this).css('color', 'yellow');
+});
+$('thumbdown').click(() => {
+  $(this).css('color', 'purple');
+});
+
 //// ------------------------------------------ ////
 
+});

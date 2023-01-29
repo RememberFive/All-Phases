@@ -180,15 +180,25 @@
   border: 1px solid black;
 }
 
-/* .thumbdown {
-  color: blue !important;
+
+.thumbdown {
+  color:lightcoral;
+}
+
+.thumbdown:hover {
+  color: red;
 }
 
 
-.thumbdown:hover {
-  background-color:red !important;
+.thumbup {
+  color:lightgreen;
 }
 
 .thumbup:hover {
-  color:green !important;
-} */
+  color:green;
+}
+
+
+.likeSystem {
+  padding-left: 2px;
+}
