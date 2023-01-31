@@ -5,12 +5,12 @@
     cursor: pointer;
   }
   
-  /* Add custom styles for message form */
+  /* Add styles for message form */
   #messagingArea {
     margin-top: 20px;
   }
   
-  /* Add custom styles for message input */
+  /* Add styles for message input */
   #userInput {
     font-size: 1.2rem;
     width: 100%;
@@ -18,21 +18,18 @@
   }
 
   
-  /* Add custom styles for emoji picker button */
+  /* Add styles for emoji picker button */
   #emoji-picker-button {
     margin-left: 5px;
   }
   
-  /* Add custom styles for file attach button */
+  /* Add styles for file attach button */
   #file-attach-button {
     margin-left: 5px;
   }
-  /* Add custom styles for mode_edit*/
-  #mode_edit{
-    display:none;
-  }
+ 
 
-  /* Set the container for the chatroom to have a fixed height and width, and overflow to scroll */
+  /* Chatroom container properties */
 
 .chatroom {
   height: 500px;
@@ -42,7 +39,6 @@
 
 /* Style the messages in the chatroom */
 .chatroom .message {
-  
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -76,7 +72,7 @@
     margin-left:5px;
 }
 
-/* Style the button for sending messages when hovered over */
+/* Send message button hovered */
 .chatroom input[type="submit"]:hover {
     background-color: #24478d;
 }
@@ -101,6 +97,10 @@
 
 #emoji-picker {
   background-color: rgba(0, 0, 0, 0.5);
+  height: 50%;
+  width: 50%;
+  top: 50%;
+  bottom: 50%;
 }
 
 #emoji-list {
@@ -125,13 +125,6 @@
 
 .emoji-span:hover {
   transform: scale(1.5);
-}
-
-#emoji-picker {
-  height: 50%;
-  width: 50%;
-  top: 50%;
-  bottom: 50%;
 }
 
 .message {
@@ -191,11 +184,11 @@
 
 
 .thumbup {
-  color:lightgreen;
+  color: rgb(38, 175, 38);
 }
 
 .thumbup:hover {
-  color:green;
+  color:rgb(28, 226, 28);
 }
 
 
@@ -207,3 +200,10 @@
   border: 2px solid lightskyblue;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
